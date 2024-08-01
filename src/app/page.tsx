@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -107,6 +108,15 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+      </div>
+      
+      <div className="mt-8 flex space-x-4">
+        <Link href="/signin" className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700">
+          Sign In
+        </Link>
+        <Link href="/signup" className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700">
+          Sign Up
+        </Link>
       </div>
     </main>
   );
